@@ -12,6 +12,8 @@ var form = d3.select("#form");
 button.on("click", runEnter);
 form.on("submit",runEnter);
 
+ufoTable=d3.select("#ufo-table");
+
 // Create the function to run for both events
 function runEnter() {
 
@@ -31,3 +33,5 @@ function runEnter() {
   // that was entered in the form
   d3.select("h1>span").text(inputValue);
 }
+
+
